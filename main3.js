@@ -19,5 +19,19 @@ const { DateTime, Interval } = luxon;
       // Exibe o contador no formato desejado
       document.getElementById("contador").innerText =
         `${anos} anos, ${meses} meses, ${dias} dias, ` +
-        `${horas} horas, ${minutos} minutos, ${segundos} sugundos`;
+        `${horas} horas, ${minutos} minutos, ${segundos} segundos`;
     }, 1000);
+
+
+function img(){
+
+  let imagem = document.getElementById('image');
+  let imagens = ['./assets/João-Clara-1.png','./assets/João-Clara-2.png','./assets/João-Clara-3.png',
+    './assets/João-Clara-4.png','./assets/João-Clara-5.png','./assets/João-Clara-6.png',
+  ]
+
+  let random  = Math.floor(Math.random()*imagens.length)
+  imagem.src = imagens[random]
+
+}
+setInterval(img, 3000);
