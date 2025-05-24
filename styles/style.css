@@ -28,7 +28,7 @@ body{
    
 }
 #info{
-    height: 19%;
+    height: 35%;
     display: block;
 }
 img{
@@ -40,9 +40,10 @@ img{
 }
 .rom-text{
     border-top: 0.125rem solid var(--color-border);
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: center;
-    width: 80%;
+    width: 100%;
+    height: 80%;
    
 }
