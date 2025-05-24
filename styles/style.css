@@ -9,6 +9,8 @@
     color: var(--font-color);
     font-weight: 400;
     font-size:1.2rem;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -17,6 +19,91 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 40%;
+  height: 15%;
+  margin: 5px 10px;
+  box-shadow: 0 1px 10px rgb(245, 114, 206);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.logo {
+  background-color: var(--bg-color);
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.logo i {
+  font-size: 16px;
+  color: rgb(245, 114, 206);
+}
+
+#musicName {
+  white-space: nowrap; 
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  color:rgb(245, 114, 206);
+}
+
+.controls button {
+  border: none;
+  background-color: var(--bg-color);
+  cursor: pointer;
+}
+
+.controls i {
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: var(--bg-color);
+  transition: all .2s;
+  color: rgb(245, 114, 206);
+}
+
+.controls i:hover {
+  background-color: rgb(87, 87, 87);
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.time span {
+  font-size: 10px;
+  color: rgb(245, 114, 206);
+}
+
+.footer {
+  width: 100%;
+}
+
+.progress-bar {
+  height: 8px;
+  background-color: #ddd;
+  cursor: pointer;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.progress {
+  height: 8px;
+  background-color: rgb(245, 114, 206);
+  border-radius: 5px;
 }
 
 .info{
@@ -46,7 +133,7 @@ img{
 }
 
 .rom-text{
-    border-top: 0.125rem solid var(--color-border);
+    border-top: 0.125rem solid rgb(245, 114, 206);
     display: block;
     flex-direction: column;
     align-items: center;

@@ -5,11 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="icon" href="./assets/heart.ico" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>João Vitor e Clara</title>
 </head>
 
 <body>
+    <div class="player">
+         <div class="logo">
+            <i class='bx bx-music'></i>
+            <span id="musicName"></span>
+        </div>
     
+    
+    
+    <audio id="player" src=""></audio>
+    <div class="controls">
+      <button id="prevButton"><i class='bx bx-skip-previous'></i></button>
+      <button id="playPauseButton"><i class='bx bx-caret-right'></i></button>
+      <button id="nextButton"><i class='bx bx-skip-next'></i></button>
+    </div>
+    <div class="footer">
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+      <div class="time">
+        <span id="currentTime">0:00</span>
+        <span id="duration">0:00</span>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="script.js"></script>
+    </div>
+
+
+
     <div class="info">
         <img src="./assets/João-Clara-2.png" alt="Casal feliz" id="image">
     </div>
