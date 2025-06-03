@@ -19,6 +19,9 @@
   width: 100vw;         /* largura total da janela */
   height: 100vh; 
 }
+#animate  span:hover{
+  cursor:default ;
+}
 
 body{
     display: flex;
