@@ -26,8 +26,8 @@ const { DateTime, Interval } = luxon;
 function img(){
 
   let imagem = document.getElementById('image');
-  let imagens = ['./assets/João-Clara-1.png','./assets/João-Clara-2.png','./assets/João-Clara-3.png',
-    './assets/João-Clara-4.png','./assets/João-Clara-5.png','./assets/João-Clara-6.png',
+  let imagens = ['./assets/Casal-1.png','./assets/Casal-2.png','./assets/Casal-3.png',
+    './assets/Casal-4.png','./assets/Casal-5.png','./assets/Casal-6.png',
   ]
 
   let random  = Math.floor(Math.random()*imagens.length)
